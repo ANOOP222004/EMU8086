@@ -10,9 +10,10 @@ back:
 ;copy si to di
 mov ax,[si]
 mov [di],ax
-;
+;point to next number
 inc si
 inc di
+;decrement count until zero
 dec cl
 jnz back
 nop
