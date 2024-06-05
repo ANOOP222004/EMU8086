@@ -7,7 +7,7 @@ mov cl,10 ;counter
 mov si,1000h ;mov to source index
 mov di,1050h ;mov to destination index
 back:
-;si and dl are swaped in this and next step
+;copy si to di
 mov al,[si] 
 mov [di],al
 ; point to next number
