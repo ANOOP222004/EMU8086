@@ -5,7 +5,7 @@
 org 100h 
 mov cl,10 ;counter
 mov si,1000h ;move to source index
-mov di,1050h ;move to destination index
+mov di,1050h ;move to destination indexSDDDDDDDDDSD
 back:
 ;copy si to di
 mov ax,[si]
