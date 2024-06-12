@@ -1,7 +1,8 @@
-org 100h         
+org 100h 
+include 'emu8086.inc'
 mov si,4000h
-mov bl,3h
-mov cl,3h
+mov bx,3h
+mov cx,3h
 l1:
 mov al,[si]
 cmp al,[si+1]
@@ -10,9 +11,10 @@ xchg al,[si+1]
 xchg al,[si]
 go:
 inc si
-dec cl
+dec cx
 jnz l1
-mov cl,3h
+mov cx,3h
 mov si,4000h
+dec bx
 jnz l1
 ret
